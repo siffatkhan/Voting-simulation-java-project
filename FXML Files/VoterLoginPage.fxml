@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="549.0" prefWidth="158.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="549.0" prefWidth="200.0" style="-fx-background-color: rgb(16,44,87);">
+               <children>
+                  <Label fx:id="menulabel" alignment="CENTER" layoutX="-1.0" prefHeight="77.0" prefWidth="158.0" style="-fx-background-color: rgb(44, 78, 128);" text="Panels" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Serif Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <AnchorPane prefHeight="549.0" prefWidth="158.0" style="-fx-background-color: rgb(16,44,87);" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="menulabel1" alignment="CENTER" layoutY="1.0" prefHeight="77.0" prefWidth="158.0" style="-fx-background-color: rgb(44, 78, 128);" text="Overview" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="28.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="RED" iconName="USER" layoutX="58.0" layoutY="160.0" size="5EM" text="" wrappingWidth="21.428571701049805" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="179.0" style="-fx-background-color: rgb(44, 78, 128);" text="User" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="218.0" style="-fx-background-color: rgb(44, 78, 128);" text=" Logged In " textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="loginbutton" layoutX="215.0" layoutY="418.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="91.0" style="-fx-background-color: rgb(16,44,87);" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="19.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="98.0" layoutY="320.0" text="Enter Password" textFill="#102c57">
+               <font>
+                  <Font name="Serif Regular" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cnicinput" layoutX="99.0" layoutY="173.0" prefHeight="30.0" prefWidth="287.0" promptText="Enter Cnic" />
+            <Label alignment="CENTER" layoutX="98.0" layoutY="147.0" text="Enter CNIC" textFill="#102c57">
+               <font>
+                  <Font name="Serif Regular" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="familyinput" layoutX="98.0" layoutY="259.0" prefHeight="30.0" prefWidth="287.0" promptText="Enter Family No" />
+            <Label alignment="CENTER" layoutX="98.0" layoutY="234.0" text="Enter Family No" textFill="#102c57">
+               <font>
+                  <Font name="Serif Regular" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordinput" layoutX="97.0" layoutY="344.0" prefHeight="30.0" prefWidth="287.0" promptText="Enter Password" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="48.0" prefHeight="40.0" prefWidth="358.0" text="Voter/User Login Page" textAlignment="RIGHT" textFill="#102c57">
+               <font>
+                  <Font name="Serif Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

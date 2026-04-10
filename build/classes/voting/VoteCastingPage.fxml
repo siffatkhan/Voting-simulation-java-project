@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voting.Controller">
+   <left>
+      <VBox prefHeight="549.0" prefWidth="170.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="560.0" prefWidth="200.0" style="-fx-background-color: rgb(16,44,87);">
+               <children>
+                  <Label fx:id="menulabel" alignment="CENTER" layoutX="-1.0" prefHeight="77.0" prefWidth="170.0" style="-fx-background-color: rgb(44, 78, 128);" text="Panels" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Serif Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <AnchorPane prefHeight="549.0" prefWidth="170.0" style="-fx-background-color: rgb(16,44,87);" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="menulabel1" alignment="CENTER" prefHeight="77.0" prefWidth="170.0" style="-fx-background-color: rgb(44, 78, 128);" text="Overview" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="28.0" />
+               </font>
+            </Label>
+           <!--<FontAwesomeIcon fill="RED" iconName="USER" layoutX="58.0" layoutY="160.0" size="5EM" text="" wrappingWidth="21.428571701049805" />-->
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="199.0" prefWidth="170.0" style="-fx-background-color: rgb(44, 78, 128);" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="245.0" prefWidth="170.0" style="-fx-background-color: rgb(44, 78, 128);" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="289.0" prefWidth="170.0" style="-fx-background-color: rgb(44, 78, 128);" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" fontSmoothingType="LCD" glyphName="USER" layoutX="56.0" layoutY="173.0" size="5em" text="" />
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView layoutX="75.0" layoutY="113.0" prefHeight="374.0" prefWidth="503.0" style="-fx-border-color: black;" />
+            <Button fx:id="Submitbutton" layoutX="285.0" layoutY="507.0" mnemonicParsing="false" onAction="#Vote_Records_Updated" prefHeight="33.0" prefWidth="110.0" style="-fx-background-color: rgb(16,44,87);" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="19.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="136.0" layoutY="35.0" prefHeight="40.0" prefWidth="358.0" text="Vote Casting" textAlignment="RIGHT" textFill="#102c57">
+               <font>
+                  <Font name="Serif Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="113.0" prefHeight="38.0" prefWidth="503.0" style="-fx-border-color: black; -fx-background-color: C0D6E8;" text=" Candidates" textFill="#102d57">
+               <font>
+                  <Font name="Serif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="Candidate_1" alignment="CENTER" layoutX="75.0" layoutY="150.0" prefHeight="57.0" prefWidth="503.0" style="-fx-border-color: black;" textFill="#102c57">
+               <font>
+                  <Font name="Serif Regular" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="Candidate_2" alignment="CENTER" layoutX="75.0" layoutY="206.0" prefHeight="57.0" prefWidth="503.0" style="-fx-border-color: black;" textFill="#102c57">
+               <font>
+                  <Font name="Serif Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Candidate_3" alignment="CENTER" layoutX="75.0" layoutY="262.0" prefHeight="57.0" prefWidth="503.0" style="-fx-border-color: black;" textFill="#102c57">
+               <font>
+                  <Font name="Serif Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Candidate_4" alignment="CENTER" layoutX="75.0" layoutY="318.0" prefHeight="57.0" prefWidth="503.0" style="-fx-border-color: black;" textFill="#102c57">
+               <font>
+                  <Font name="Serif Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Candidate_5" alignment="CENTER" layoutX="75.0" layoutY="374.0" prefHeight="57.0" prefWidth="503.0" style="-fx-border-color: black;" textFill="#102c57">
+               <font>
+                  <Font name="Serif Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Candidate_6" alignment="CENTER" layoutX="75.0" layoutY="430.0" prefHeight="57.0" prefWidth="503.0" style="-fx-border-color: black;" textFill="#102c57">
+               <font>
+                  <Font name="Serif Regular" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="SymbolPic_1" fitHeight="53.0" fitWidth="66.0" layoutX="82.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/mix2-modified.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="SymbolPic_2" fitHeight="53.0" fitWidth="66.0" layoutX="82.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/mix2-modified%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="SymbolPic_3" fitHeight="53.0" fitWidth="66.0" layoutX="82.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/mix2-modified%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="SymbolPic_4" fitHeight="53.0" fitWidth="66.0" layoutX="82.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/mix_symbols-modified%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="SymbolPic_5" fitHeight="53.0" fitWidth="66.0" layoutX="82.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/mix_symbols-modified%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="SymbolPic_6" fitHeight="53.0" fitWidth="66.0" layoutX="82.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/mix_symbols-modified.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="radio_1" layoutX="537.0" layoutY="166.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="18.0" selected="true">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Candidate" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radio_2" layoutX="537.0" layoutY="223.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="18.0" toggleGroup="$Candidate" />
+            <RadioButton fx:id="radio_3" layoutX="537.0" layoutY="277.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="18.0" toggleGroup="$Candidate" />
+            <RadioButton fx:id="radio_4" layoutX="537.0" layoutY="333.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="18.0" toggleGroup="$Candidate" />
+            <RadioButton fx:id="radio_5" layoutX="537.0" layoutY="391.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="18.0" toggleGroup="$Candidate" />
+            <RadioButton fx:id="radio_6" layoutX="537.0" layoutY="446.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="18.0" toggleGroup="$Candidate" />
+            <Label fx:id="outputlabeltwo1" alignment="BOTTOM_LEFT" layoutX="76.0" layoutY="89.0" prefHeight="24.0" prefWidth="162.0" text="Select ONE choice." textFill="#102c57">
+               <font>
+                  <Font name="Arial Hebrew" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Show_Constituency" alignment="CENTER" layoutX="212.0" layoutY="113.0" prefHeight="38.0" prefWidth="285.0" textFill="#102c57">
+               <font>
+                  <Font name="Serif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="86.0" layoutX="318.0" layoutY="73.0" startX="-82.0" stroke="#102c57" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
