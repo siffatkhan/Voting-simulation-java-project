@@ -5,18 +5,18 @@ This project is a voting system simulation built using Java. It provides a simpl
 The project uses JavaFX for the user interface and Scene Builder for designing the UI layout. The backend logic is written in core Java.
 
 ## Features
-User-friendly graphical interface for voting
-Candidate selection system
-Vote casting functionality
-Result calculation and display
-Simple and clean UI flow built with JavaFX
+User-friendly graphical interface for voting  
+Candidate selection system  
+Vote casting functionality  
+Result calculation and display  
+Simple and clean UI flow built with JavaFX  
 
 ## Technology Stack
-Java
-JavaFX
-Scene Builder
-FXML for UI design
-Core Java for application logic
+Java  
+JavaFX  
+Scene Builder  
+FXML for UI design  
+Core Java for application logic  
 
 ## Project Structure
 The project contains UI files created in Scene Builder, FXML files for layout, and Java classes for logic handling. Controllers manage user interactions and connect UI with backend logic.
