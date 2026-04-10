@@ -22,13 +22,13 @@ Core Java for application logic
 The project contains UI files created in Scene Builder, FXML files for layout, and Java classes for logic handling. Controllers manage user interactions and connect UI with backend logic.
 
 ## How to Run the Project
-Install JDK 8 or higher
-Install JavaFX SDK if not included in your JDK
-Open the project in an IDE such as IntelliJ IDEA or Eclipse
-Load the project dependencies
-Run the main Java class to start the application
+Install JDK 8 or higher  
+Install JavaFX SDK if not included in your JDK  
+Open the project in an IDE such as IntelliJ IDEA or Eclipse  
+Load the project dependencies  
+Run the main Java class to start the application  
 
 ## Requirements
-Java Development Kit
-JavaFX runtime
-Scene Builder for UI editing
+Java Development Kit  
+JavaFX runtime  
+Scene Builder for UI editing  
